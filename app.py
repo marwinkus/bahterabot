@@ -33,9 +33,42 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = TextSendMessage(text=event.message.text)
-    line_bot_api.reply_message(event.reply_token, message)
+    #message = TextSendMessage(text=event.message.text)
+    #line_bot_api.reply_message(event.reply_token, message)
+    if event.message.text.casefold() == "minta operator":
+        line_bot_api.reply_message(event.reply_token, colong())
 
+def colong():
+
+    status = True
+
+    while status:
+        poin = random.randint(1,50000)
+        link = "http://safebooru.org/index.php?page=dapi&s=post&q=index&pid=" + str(poin) + "&limit=1&json=1&tags=arknights"
+        res = requests.get(link)
+
+
+        if res.json()[0]['sample'] == False:
+            ori = "https://safebooru.org/images/" + res.json()[0]['directory'] + "/" + res.json()[0]['image']
+        else:
+            ori = "https://safebooru.org/samples/" + res.json()[0]['directory'] + "/sample_" + res.json()[0]['image']
+
+
+        pre = "https://safebooru.org/thumbnails/" + res.json()[0]['directory'] + "/thumbnail_" + res.json()[0]['image']
+
+        orires = requests.get(ori)
+        preres = requests.get(pre)
+
+        if orires.status_code == 200:
+            if preres.status_code == 200:
+                status = False
+
+
+    message = ImageSendMessage(original_content_url = ori ,preview_image_url = pre)
+    print(message)
+    print(poin)
+    return message
+    
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
