@@ -1,4 +1,8 @@
-from flask import Flask, request, abort
+from flask import Flask, request, abort, jsonify
+
+import random
+import json
+import requests
 
 from linebot import (
     LineBotApi, WebhookHandler
