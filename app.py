@@ -63,7 +63,9 @@ def gacha10():
 	cha9 = gacha()
 	cha10 = gacha()
 		
-	return 'Anda mendapatkan: {}, {}, {}, {}, {}, {}, {}, {}, {}, dan {}.' format(cha1, cha2, cha3, cha4, cha5, cha6, cha7, cha8, cha9, cha10)
+	fulltext = 'Anda mendapatkan: {}, {}, {}, {}, {}, {}, {}, {}, {}, dan {}.' format(cha1, cha2, cha3, cha4, cha5, cha6, cha7, cha8, cha9, cha10)
+	
+	return fulltext
 	
 def gacha6():
 	get = random.randint(1,10)
