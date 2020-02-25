@@ -44,7 +44,41 @@ def handle_message(event):
     elif event.message.text.casefold() == "mau gacha":
         message = TextSendMessage(text=gacha())
         line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text.casefold() == "minta top operator":
+        message = TextSendMessage(text=gacha6())
+        line_bot_api.reply_message(event.reply_token, message)
 
+def gacha6():
+	get = random.randint(1,10)
+	if get == 10:
+		numbr = random.randint(1,11)
+		if numbr == 1:
+			chara = 'Selamat, Anda mendapatkan Exusiai!'
+		elif numbr == 2:
+			chara = 'Selamat, Anda mendapatkan Siege!'
+		elif numbr == 3:
+			chara = 'Selamat, Anda mendapatkan Ifrit!'
+		elif numbr == 4:
+			chara = 'Selamat, Anda mendapatkan Eyjafjalla!'
+		elif numbr == 5:
+			chara = 'Selamat, Anda mendapatkan Angelina!'
+		elif numbr == 6:
+			chara = 'Selamat, Anda mendapatkan Shining!'
+		elif numbr == 7:
+			chara = 'Selamat, Anda mendapatkan Nightingale!'
+		elif numbr == 8:
+			chara = 'Selamat, Anda mendapatkan Hoshiguma!'
+		elif numbr == 9:
+			chara = 'Selamat, Anda mendapatkan Saria!'
+		elif numbr == 10:
+			chara = 'Selamat, Anda mendapatkan SilverAsh!'
+		elif numbr == 11:
+			chara = 'Selamat, Anda mendapatkan Skadi!'
+	else:
+		chara = 'Maaf sekali, Anda gagal mendapatkan Top Operator.'
+		
+	return chara
+	
 def gacha():
 	
 	rarity = random.randint(1,100)
