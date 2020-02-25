@@ -47,7 +47,8 @@ def handle_message(event):
     elif event.message.text.casefold() == "minta top operator":
         message = TextSendMessage(text=gacha6())
         line_bot_api.reply_message(event.reply_token, message)
- '''
+        
+'''
     elif event.message.text.casefold() == "mau gacha 10 kali":
         message = TextSendMessage(text=gacha10())
         line_bot_api.reply_message(event.reply_token, message)
