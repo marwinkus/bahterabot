@@ -41,7 +41,7 @@ def handle_message(event):
     #line_bot_api.reply_message(event.reply_token, message)
     if event.message.text.casefold() == "minta operator":
         line_bot_api.reply_message(event.reply_token, colong())
-    else if event.message.text.casefold() == "mau gacha":
+    elif event.message.text.casefold() == "mau gacha":
 		line_bot_api.reply_message(event.reply_token, gacha())
 
 def gacha():
@@ -51,155 +51,155 @@ def gacha():
 		numbr = random.randint(1,11)
 		if numbr == 1:
 			chara = 'Exusiai'
-		else if numbr == 2:
+		elif numbr == 2:
 			chara = 'Siege'
-		else if numbr == 3:
+		elif numbr == 3:
 			chara = 'Ifrit'
-		else if numbr == 4:
+		elif numbr == 4:
 			chara = 'Eyjafjalla'
-		else if numbr == 5:
+		elif numbr == 5:
 			chara = 'Angelina'
-		else if numbr == 6:
+		elif numbr == 6:
 			chara = 'Shining'
-		else if numbr == 7:
+		elif numbr == 7:
 			chara = 'Nightingale'
-		else if numbr == 8:
+		elif numbr == 8:
 			chara = 'Hoshiguma'
-		else if numbr == 9:
+		elif numbr == 9:
 			chara = 'Saria'
-		else if numbr == 10:
+		elif numbr == 10:
 			chara = 'SilverAsh'
-		else if numbr == 11:
+		elif numbr == 11:
 			chara = 'Skadi'
 		
-	else if rarity <= 10:
+	elif rarity <= 10:
 		numbr = random.randint(1,26)
 		if numbr == 1:
 			chara = 'Ptilopsis'
-		else if numbr == 2:
+		elif numbr == 2:
 			chara = 'Zima'
-		else if numbr == 3:
+		elif numbr == 3:
 			chara = 'Texas'
-		else if numbr == 4:
+		elif numbr == 4:
 			chara = 'Franka'
-		else if numbr == 5:
+		elif numbr == 5:
 			chara = 'Lappland'
-		else if numbr == 6:
+		elif numbr == 6:
 			chara = 'Specter'
-		else if numbr == 7:
+		elif numbr == 7:
 			chara = 'Blue Poison'
-		else if numbr == 8:
+		elif numbr == 8:
 			chara = 'Platinum'
-		else if numbr == 9:
+		elif numbr == 9:
 			chara = 'Meteorite'
-		else if numbr == 10:
+		elif numbr == 10:
 			chara = 'Skyfire'
-		else if numbr == 11:
+		elif numbr == 11:
 			chara = 'Mayer'
-		else if numbr == 12:
+		elif numbr == 12:
 			chara = 'Silence'
-		else if numbr == 13:
+		elif numbr == 13:
 			chara = 'Warfarin'
-		else if numbr == 14: 
+		elif numbr == 14: 
 			chara = 'Nearl'
-		else if numbr == 15: 
+		elif numbr == 15: 
 			chara = 'Projekt Red'
-		else if numbr == 16: 
+		elif numbr == 16: 
 			chara = 'Liskarm'
-		else if numbr == 17: 
+		elif numbr == 17: 
 			chara = 'Croissant'
-		else if numbr == 18: 
+		elif numbr == 18: 
 			chara = 'Provence'
-		else if numbr == 19: 
+		elif numbr == 19: 
 			chara = 'Firewatch'
-		else if numbr == 20: 
+		elif numbr == 20: 
 			chara = 'Cliffheart'
-		else if numbr == 21: 
+		elif numbr == 21: 
 			chara = 'Pramanix'
-		else if numbr == 22: 
+		elif numbr == 22: 
 			chara = 'Istina'
-		else if numbr == 23: 
+		elif numbr == 23: 
 			chara = 'Sora'
-		else if numbr == 24: 
+		elif numbr == 24: 
 			chara = 'Manticore'
-		else if numbr == 25: 
+		elif numbr == 25: 
 			chara = 'FEater'
-		else if numbr == 26: 
+		elif numbr == 26: 
 			chara = 'Nightmare'
-	else if rarity <= 60:
+	elif rarity <= 60:
 		numbr = random.randint(1,22)
 		if numbr == 1: 
 			chara = 'Haze'
-		else if numbr == 2: 
+		elif numbr == 2: 
 			chara = 'Gitano'
-		else if numbr == 3: 
+		elif numbr == 3: 
 			chara = 'Jessica'
-		else if numbr == 4: 
+		elif numbr == 4: 
 			chara = 'Meteor'
-		else if numbr == 5:
+		elif numbr == 5:
 			chara = 'Shirayuki'
-		else if numbr == 6: 
+		elif numbr == 6: 
 			chara = 'Scavenger'
-		else if numbr == 7: 
+		elif numbr == 7: 
 			chara = 'Vigna'
-		else if numbr == 8: 
+		elif numbr == 8: 
 			chara = 'Dobermann'
-		else if numbr == 9: 
+		elif numbr == 9: 
 			chara = 'Matoimaru'
-		else if numbr == 10: 
+		elif numbr == 10: 
 			chara = 'Frostleaf'
-		else if numbr == 11: 
+		elif numbr == 11: 
 			chara = 'Mousse'
-		else if numbr == 12: 
+		elif numbr == 12: 
 			chara = 'Gravel'
-		else if numbr == 13: 
+		elif numbr == 13: 
 			chara = 'Rope'
-		else if numbr == 14:
+		elif numbr == 14:
 			chara = 'Myrrh'
-		else if numbr == 15: 
+		elif numbr == 15: 
 			chara = 'Perfurmer'
-		else if numbr == 16: 
+		elif numbr == 16: 
 			chara = 'Matterhorn'
-		else if numbr == 17: 
+		elif numbr == 17: 
 			chara = 'Cuora'
-		else if numbr == 18: 
+		elif numbr == 18: 
 			chara = 'Gummy'
-		else if numbr == 19: 
+		elif numbr == 19: 
 			chara = 'Deepcolor'
-		else if numbr == 20: 
+		elif numbr == 20: 
 			chara = 'Earthspirit'
-		else if numbr == 21: 
+		elif numbr == 21: 
 			chara = 'Shaw'
-		else if numbr == 22: 
+		elif numbr == 22: 
 			chara = 'Beehunter'
 	else: numbr = random.randint(1,14)
 		if numbr == 1: 
 			chara = 'Fang'
-		else if numbr == 2: 
+		elif numbr == 2: 
 			chara = 'Vanilla'
-		else if numbr == 3: 
+		elif numbr == 3: 
 			chara = 'Plume'
-		else if numbr == 4: 
+		elif numbr == 4: 
 			chara = 'Melantha'
-		else if numbr == 5: 
+		elif numbr == 5: 
 			chara = 'Cardigan'
-		else if numbr == 6: 
+		elif numbr == 6: 
 			chara = 'Beagle'
-		else if numbr == 7: 
+		elif numbr == 7: 
 			chara = 'Kroos'
-		else if numbr == 8: 
+		elif numbr == 8: 
 			chara = 'Lava'
-		else if numbr == 9: 
+		elif numbr == 9: 
 			chara = 'Hibiscus'
-		else if numbr == 10: 
+		elif numbr == 10: 
 			chara = 'Ansel'
-		else if numbr == 11: 
+		elif numbr == 11: 
 			chara = 'Steward'
-		else if numbr == 12: 
+		elif numbr == 12: 
 			chara = 'Orchid'
-		else if numbr == 13: 
+		elif numbr == 13: 
 			chara = 'Catapult'
-		else if numbr == 14: 
+		elif numbr == 14: 
 			chara = 'Midnight'
 		
 	return chara
