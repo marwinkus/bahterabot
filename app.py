@@ -63,7 +63,7 @@ def gacha10():
 	cha9 = gacha()
 	cha10 = gacha()
 		
-	fulltext = 'Anda mendapatkan: {}, {}, {}, {}, {}, {}, {}, {}, {}, dan {}.' format(cha1, cha2, cha3, cha4, cha5, cha6, cha7, cha8, cha9, cha10)
+	fulltext = "Anda mendapatkan: {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, dan {9}." format(cha1, cha2, cha3, cha4, cha5, cha6, cha7, cha8, cha9, cha10)
 	
 	return fulltext
 	
