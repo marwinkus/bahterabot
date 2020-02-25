@@ -172,7 +172,8 @@ def gacha():
 			chara = 'Shaw'
 		elif numbr == 22: 
 			chara = 'Beehunter'
-	else: numbr = random.randint(1,14)
+	else: 
+		numbr = random.randint(1,14)
 		if numbr == 1: 
 			chara = 'Fang'
 		elif numbr == 2: 
