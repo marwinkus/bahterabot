@@ -42,7 +42,8 @@ def handle_message(event):
     if event.message.text.casefold() == "minta operator":
         line_bot_api.reply_message(event.reply_token, colong())
     elif event.message.text.casefold() == "mau gacha":
-	    line_bot_api.reply_message(event.reply_token, gacha())
+		message = TextSendMessage(text=gacha())
+	    line_bot_api.reply_message(event.reply_token, message)
 
 def gacha():
 	
