@@ -46,15 +46,12 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif event.message.text.casefold() == "minta top operator":
         message = TextSendMessage(text=gacha6())
-        line_bot_api.reply_message(event.reply_token, message)
-        
-'''
+        line_bot_api.reply_message(event.reply_token, message)       
     elif event.message.text.casefold() == "mau gacha 10 kali":
         message = TextSendMessage(text=gacha10())
         line_bot_api.reply_message(event.reply_token, message)
-'''
 
-'''def gacha10():
+def gacha10():
 	cha1 = gacha()
 	cha2 = gacha()
 	cha3 = gacha()
@@ -66,10 +63,9 @@ def handle_message(event):
 	cha9 = gacha()
 	cha10 = gacha()
 		
-	fulltext = "Anda mendapatkan: {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, dan {9}." format(cha1, cha2, cha3, cha4, cha5, cha6, cha7, cha8, cha9, cha10)
-	
+	fulltext = 'Anda mendapatkan: ' + 'cha1' + ', ' + 'cha2' + ', ' + 'cha3' + ', ' + 'cha4' + ', ' + 'cha5' + ', ' + 'cha6' + ', ' + 'cha7' + ', ' + 'cha8' + ', ' + 'cha9' + ', dan' + 'cha10'
+
 	return fulltext
-'''
 	
 def gacha6():
 	get = random.randint(1,10)
