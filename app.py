@@ -69,8 +69,8 @@ def gacha10():
 	
 def gacha6():
 	get = random.randint(1,10)
-	if get == 10:
-		numbr = random.randint(1,11)
+	if get >= 9:
+		numbr = random.randint(1,12)
 		if numbr == 1:
 			chara = 'Selamat, Anda mendapatkan Exusiai!'
 		elif numbr == 2:
@@ -93,6 +93,8 @@ def gacha6():
 			chara = 'Selamat, Anda mendapatkan SilverAsh!'
 		elif numbr == 11:
 			chara = 'Selamat, Anda mendapatkan Skadi!'
+		elif numbr == 12:
+			chara = 'Selamat, Anda mendapatkan Chen!'
 	else:
 		chara = 'Maaf sekali, Anda gagal mendapatkan Top Operator.'
 		
@@ -102,7 +104,7 @@ def gacha():
 	
 	rarity = random.randint(1,100)
 	if rarity <= 2:
-		numbr = random.randint(1,11)
+		numbr = random.randint(1,12)
 		if numbr == 1:
 			chara = 'Exusiai'
 		elif numbr == 2:
@@ -125,9 +127,11 @@ def gacha():
 			chara = 'SilverAsh'
 		elif numbr == 11:
 			chara = 'Skadi'
+		elif numbr == 12:
+			chara = 'Chen'
 		
 	elif rarity <= 10:
-		numbr = random.randint(1,26)
+		numbr = random.randint(1,27)
 		if numbr == 1:
 			chara = 'Ptilopsis'
 		elif numbr == 2:
@@ -180,6 +184,8 @@ def gacha():
 			chara = 'FEater'
 		elif numbr == 26: 
 			chara = 'Nightmare'
+		elif numbr == 27: 
+			chara = 'Swire'
 	elif rarity <= 60:
 		numbr = random.randint(1,22)
 		if numbr == 1: 
@@ -227,7 +233,7 @@ def gacha():
 		elif numbr == 22: 
 			chara = 'Beehunter'
 	else: 
-		numbr = random.randint(1,14)
+		numbr = random.randint(1,15)
 		if numbr == 1: 
 			chara = 'Fang'
 		elif numbr == 2: 
@@ -256,6 +262,8 @@ def gacha():
 			chara = 'Catapult'
 		elif numbr == 14: 
 			chara = 'Midnight'
+		elif numbr == 15:
+			chara = 'Popukar'
 		
 	return chara
 	
@@ -264,7 +272,7 @@ def colong():
     status = True
 
     while status:
-        poin = random.randint(1,1800)
+        poin = random.randint(1,2200)
         link = "http://safebooru.org/index.php?page=dapi&s=post&q=index&pid=" + str(poin) + "&limit=1&json=1&tags=arknights"
         res = requests.get(link)
 
