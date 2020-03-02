@@ -233,7 +233,7 @@ def gacha():
 		elif numbr == 22: 
 			chara = 'Beehunter'
 	else: 
-		numbr = random.randint(1,15)
+		numbr = random.randint(1,16)
 		if numbr == 1: 
 			chara = 'Fang'
 		elif numbr == 2: 
@@ -263,6 +263,8 @@ def gacha():
 		elif numbr == 14: 
 			chara = 'Midnight'
 		elif numbr == 15:
+			chara = 'Spot'
+		elif numbr == 16:
 			chara = 'Popukar'
 		
 	return chara
@@ -272,7 +274,7 @@ def colong():
     status = True
 
     while status:
-        poin = random.randint(1,2200)
+        poin = random.randint(1,4000)
         link = "http://safebooru.org/index.php?page=dapi&s=post&q=index&pid=" + str(poin) + "&limit=1&json=1&tags=arknights"
         res = requests.get(link)
 
