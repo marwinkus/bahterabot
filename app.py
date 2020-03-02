@@ -274,7 +274,7 @@ def colong():
     status = True
 
     while status:
-        poin = random.randint(1,4000)
+        poin = random.randint(1,2400)
         link = "http://safebooru.org/index.php?page=dapi&s=post&q=index&pid=" + str(poin) + "&limit=1&json=1&tags=arknights"
         res = requests.get(link)
 
