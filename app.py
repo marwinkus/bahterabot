@@ -70,7 +70,7 @@ def gacha10():
 def gacha6():
 	get = random.randint(1,10)
 	if get >= 9:
-		numbr = random.randint(1,12)
+		numbr = random.randint(1,13)
 		if numbr == 1:
 			chara = 'Selamat, Anda mendapatkan Exusiai!'
 		elif numbr == 2:
@@ -95,6 +95,8 @@ def gacha6():
 			chara = 'Selamat, Anda mendapatkan Skadi!'
 		elif numbr == 12:
 			chara = 'Selamat, Anda mendapatkan Chen!'
+		elif numbr == 13:
+			chara = 'Selamat, Anda mendapatkan Magallan!'
 	else:
 		chara = 'Maaf sekali, Anda gagal mendapatkan Top Operator.'
 		
@@ -104,7 +106,7 @@ def gacha():
 	
 	rarity = random.randint(1,100)
 	if rarity <= 2:
-		numbr = random.randint(1,12)
+		numbr = random.randint(1,13)
 		if numbr == 1:
 			chara = 'Exusiai'
 		elif numbr == 2:
@@ -129,9 +131,11 @@ def gacha():
 			chara = 'Skadi'
 		elif numbr == 12:
 			chara = 'Chen'
+		elif numbr == 13:
+			chara = 'Magallan'
 		
 	elif rarity <= 10:
-		numbr = random.randint(1,27)
+		numbr = random.randint(1,28)
 		if numbr == 1:
 			chara = 'Ptilopsis'
 		elif numbr == 2:
@@ -186,8 +190,10 @@ def gacha():
 			chara = 'Nightmare'
 		elif numbr == 27: 
 			chara = 'Swire'
+		elif numbr == 28:
+			chara = 'Executor'
 	elif rarity <= 60:
-		numbr = random.randint(1,22)
+		numbr = random.randint(1,23)
 		if numbr == 1: 
 			chara = 'Haze'
 		elif numbr == 2: 
@@ -232,6 +238,8 @@ def gacha():
 			chara = 'Shaw'
 		elif numbr == 22: 
 			chara = 'Beehunter'
+		elif numbr == 23:
+			chara = 'Vermeil'
 	else: 
 		numbr = random.randint(1,16)
 		if numbr == 1: 
