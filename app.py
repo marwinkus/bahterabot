@@ -70,33 +70,37 @@ def gacha10():
 def gacha6():
 	get = random.randint(1,10)
 	if get >= 9:
-		numbr = random.randint(1,13)
+		numbr = random.randint(1,14)
 		if numbr == 1:
-			chara = 'Selamat, Anda mendapatkan Exusiai!'
+			chrs = 'Exusiai'
 		elif numbr == 2:
-			chara = 'Selamat, Anda mendapatkan Siege!'
+			chrs = 'Siege'
 		elif numbr == 3:
-			chara = 'Selamat, Anda mendapatkan Ifrit!'
+			chrs = 'Ifrit'
 		elif numbr == 4:
-			chara = 'Selamat, Anda mendapatkan Eyjafjalla!'
+			chrs = 'Eyjafjalla'
 		elif numbr == 5:
-			chara = 'Selamat, Anda mendapatkan Angelina!'
+			chrs = 'Angelina'
 		elif numbr == 6:
-			chara = 'Selamat, Anda mendapatkan Shining!'
+			chrs = 'Shining'
 		elif numbr == 7:
-			chara = 'Selamat, Anda mendapatkan Nightingale!'
+			chrs = 'Nightingale'
 		elif numbr == 8:
-			chara = 'Selamat, Anda mendapatkan Hoshiguma!'
+			chrs = 'Hoshiguma'
 		elif numbr == 9:
-			chara = 'Selamat, Anda mendapatkan Saria!'
+			chrs = 'Saria'
 		elif numbr == 10:
-			chara = 'Selamat, Anda mendapatkan SilverAsh!'
+			chrs = 'SilverAsh'
 		elif numbr == 11:
-			chara = 'Selamat, Anda mendapatkan Skadi!'
+			chrs = 'Skadi'
 		elif numbr == 12:
-			chara = 'Selamat, Anda mendapatkan Chen!'
+			chrs = 'Chen'
 		elif numbr == 13:
-			chara = 'Selamat, Anda mendapatkan Magallan!'
+			chrs = 'Magallan'
+		elif numbr == 14:
+			chrs = 'Hellagur'
+			
+		chara = 'Selamat, Anda mendapatkan ' + chrs + '!'
 	else:
 		chara = 'Maaf sekali, Anda gagal mendapatkan Top Operator.'
 		
@@ -106,92 +110,99 @@ def gacha():
 	
 	rarity = random.randint(1,100)
 	if rarity <= 2:
-		numbr = random.randint(1,13)
+		numbr = random.randint(1,14)
 		if numbr == 1:
-			chara = 'Exusiai'
+			chrs = 'Exusiai'
 		elif numbr == 2:
-			chara = 'Siege'
+			chrs = 'Siege'
 		elif numbr == 3:
-			chara = 'Ifrit'
+			chrs = 'Ifrit'
 		elif numbr == 4:
-			chara = 'Eyjafjalla'
+			chrs = 'Eyjafjalla'
 		elif numbr == 5:
-			chara = 'Angelina'
+			chrs = 'Angelina'
 		elif numbr == 6:
-			chara = 'Shining'
+			chrs = 'Shining'
 		elif numbr == 7:
-			chara = 'Nightingale'
+			chrs = 'Nightingale'
 		elif numbr == 8:
-			chara = 'Hoshiguma'
+			chrs = 'Hoshiguma'
 		elif numbr == 9:
-			chara = 'Saria'
+			chrs = 'Saria'
 		elif numbr == 10:
-			chara = 'SilverAsh'
+			chrs = 'SilverAsh'
 		elif numbr == 11:
-			chara = 'Skadi'
+			chrs = 'Skadi'
 		elif numbr == 12:
-			chara = 'Chen'
+			chrs = 'Chen'
 		elif numbr == 13:
-			chara = 'Magallan'
-		
+			chrs = 'Magallan'
+		elif numbr == 14:
+			chrs = 'Hellagur'
+		chara = '*' + chrs + '*'
+			
 	elif rarity <= 10:
-		numbr = random.randint(1,28)
+		numbr = random.randint(1,29)
 		if numbr == 1:
-			chara = 'Ptilopsis'
+			chrs = 'Ptilopsis'
 		elif numbr == 2:
-			chara = 'Zima'
+			chrs = 'Zima'
 		elif numbr == 3:
-			chara = 'Texas'
+			chrs = 'Texas'
 		elif numbr == 4:
-			chara = 'Franka'
+			chrs = 'Franka'
 		elif numbr == 5:
-			chara = 'Lappland'
+			chrs = 'Lappland'
 		elif numbr == 6:
-			chara = 'Specter'
+			chrs = 'Specter'
 		elif numbr == 7:
-			chara = 'Blue Poison'
+			chrs = 'Blue Poison'
 		elif numbr == 8:
-			chara = 'Platinum'
+			chrs = 'Platinum'
 		elif numbr == 9:
-			chara = 'Meteorite'
+			chrs = 'Meteorite'
 		elif numbr == 10:
-			chara = 'Skyfire'
+			chrs = 'Skyfire'
 		elif numbr == 11:
-			chara = 'Mayer'
+			chrs = 'Mayer'
 		elif numbr == 12:
-			chara = 'Silence'
+			chrs = 'Silence'
 		elif numbr == 13:
-			chara = 'Warfarin'
+			chrs = 'Warfarin'
 		elif numbr == 14: 
-			chara = 'Nearl'
+			chrs = 'Nearl'
 		elif numbr == 15: 
-			chara = 'Projekt Red'
+			chrs = 'Projekt Red'
 		elif numbr == 16: 
-			chara = 'Liskarm'
+			chrs = 'Liskarm'
 		elif numbr == 17: 
-			chara = 'Croissant'
+			chrs = 'Croissant'
 		elif numbr == 18: 
-			chara = 'Provence'
+			chrs = 'Provence'
 		elif numbr == 19: 
-			chara = 'Firewatch'
+			chrs = 'Firewatch'
 		elif numbr == 20: 
-			chara = 'Cliffheart'
+			chrs = 'Cliffheart'
 		elif numbr == 21: 
-			chara = 'Pramanix'
+			chrs = 'Pramanix'
 		elif numbr == 22: 
-			chara = 'Istina'
+			chrs = 'Istina'
 		elif numbr == 23: 
-			chara = 'Sora'
+			chrs = 'Sora'
 		elif numbr == 24: 
-			chara = 'Manticore'
+			chrs = 'Manticore'
 		elif numbr == 25: 
-			chara = 'FEater'
+			chrs = 'FEater'
 		elif numbr == 26: 
-			chara = 'Nightmare'
+			chrs = 'Nightmare'
 		elif numbr == 27: 
-			chara = 'Swire'
+			chrs = 'Swire'
 		elif numbr == 28:
-			chara = 'Executor'
+			chrs = 'Executor'
+		elif numbr == 29:
+			chrs = 'Astesia'
+		chara = '+' + chrs + '+'
+			
 	elif rarity <= 60:
 		numbr = random.randint(1,23)
 		if numbr == 1: 
@@ -240,6 +251,8 @@ def gacha():
 			chara = 'Beehunter'
 		elif numbr == 23:
 			chara = 'Vermeil'
+		elif numbr == 24:
+			chara = 'Myrtle'
 	else: 
 		numbr = random.randint(1,16)
 		if numbr == 1: 
@@ -282,7 +295,7 @@ def colong():
     status = True
 
     while status:
-        poin = random.randint(1,2400)
+        poin = random.randint(1,4000)
         link = "http://safebooru.org/index.php?page=dapi&s=post&q=index&pid=" + str(poin) + "&limit=1&json=1&tags=arknights"
         res = requests.get(link)
 
