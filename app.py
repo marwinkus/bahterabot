@@ -58,8 +58,7 @@ def jam()
 	import datetime
 
 	tanggal = datetime.datetime.now()
-	
-	return tanggal
+	print(tanggal)
 
 def gacha10():
 	cha1 = gacha()
