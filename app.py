@@ -3,6 +3,7 @@ from flask import Flask, request, abort, jsonify
 import random
 import json
 import requests
+import datetime
 
 from linebot import (
     LineBotApi, WebhookHandler
@@ -55,8 +56,6 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
 
 def jam()
-	import datetime
-
 	tanggal = datetime.datetime.now()
 	print(tanggal)
 
