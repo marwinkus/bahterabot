@@ -50,6 +50,16 @@ def handle_message(event):
     elif event.message.text.casefold() == "mau gacha 10 kali":
         message = TextSendMessage(text=gacha10())
         line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text.casefold() == "jam server":
+        message = TextSendMessage(text=jam())
+        line_bot_api.reply_message(event.reply_token, message)
+
+def jam()
+	import datetime
+
+	tanggal = datetime.datetime.now()
+	
+	return tanggal
 
 def gacha10():
 	cha1 = gacha()
