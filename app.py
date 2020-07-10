@@ -53,12 +53,12 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
 
 def gacha10():
-	a = 0
+	a = 10
 	b = 0
 	text1 = 'Anda mendapatkan: ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', dan ' + gacha(a, b) + '.'
 	
 	skor = a*10 + b
-	text2 = 'Skor Anda: ' + str(a) + ' QC + ' + str(b) + ' AC =' + str(skor) + '.'
+	text2 = ' Skor Anda: ' + str(a) + ' QC + ' + str(b) + ' AC = ' + str(skor) + '.'
 	
 	fulltext = text1 + text2
 	return fulltext
