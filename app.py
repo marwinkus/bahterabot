@@ -55,8 +55,12 @@ def handle_message(event):
 def gacha10():
 	a = 0
 	b = 0
-	fulltext = 'Anda mendapatkan: ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', dan ' + gacha(a, b) + '. Skor Anda = ' + str(a) + ' QC + ' + str(b) + ' AC'
-
+	text1 = 'Anda mendapatkan: ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', dan ' + gacha(a, b)'.'
+	
+	skor = a*10 + b
+	text2 = 'Skor Anda: ' + str(a) + ' QC + ' + str(b) + ' AC =' str(skor) + '.'
+	
+	fulltext = text1 + text2
 	return fulltext
 	
 def gacha6():
