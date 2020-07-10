@@ -108,7 +108,7 @@ def gacha(a, b):
 	
 	rarity = random.randint(1,100)
 	if rarity <= 2:
-		a = a + 10
+		a += 10
 		numbr = random.randint(1,17)
 		if numbr == 1:
 			chrs = 'Exusiai'
@@ -147,7 +147,7 @@ def gacha(a, b):
 		chara = '*' + chrs + '*'
 			
 	elif rarity <= 10:
-		a = a + 5
+		a += 5
 		numbr = random.randint(1,33)
 		if numbr == 1:
 			chrs = 'Ptilopsis'
@@ -216,8 +216,8 @@ def gacha(a, b):
 		chara = '+' + chrs + '+'
 			
 	elif rarity <= 60:
-		b = b + 30
-		a = a + 1
+		b += 30
+		a += 1
 		numbr = random.randint(1,27)
 		if numbr == 1: 
 			chara = 'Haze'
@@ -275,7 +275,7 @@ def gacha(a, b):
 			chara = 'Ambriel'
 	else: 
 		numbr = random.randint(1,16)
-		b = b + 10
+		b += 10
 		if numbr == 1: 
 			chara = 'Fang'
 		elif numbr == 2: 
