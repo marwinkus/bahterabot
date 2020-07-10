@@ -51,17 +51,8 @@ def handle_message(event):
     elif event.message.text.casefold() == "mau gacha 10 kali":
         message = TextSendMessage(text=gacha10())
         line_bot_api.reply_message(event.reply_token, message)
-    elif event.message.text.casefold() == "jam server":
-        message = TextSendMessage(text=jam())
-        line_bot_api.reply_message(event.reply_token, message)
-
-def jam()
-	tanggal = datetime.datetime.now()
-	print(tanggal)
 
 def gacha10():
-	cha1 = gacha()
-	cha2 = gacha()
 	cha3 = gacha()
 	cha4 = gacha()
 	cha5 = gacha()
@@ -71,14 +62,14 @@ def gacha10():
 	cha9 = gacha()
 	cha10 = gacha()
 		
-	fulltext = 'Anda mendapatkan: ' + cha1 + ', ' + cha2 + ', ' + cha3 + ', ' + cha4 + ', ' + cha5 + ', ' + cha6 + ', ' + cha7 + ', ' + cha8 + ', ' + cha9 + ', dan ' + cha10 + '.'
+	fulltext = 'Anda mendapatkan: ' + gacha() + ', ' + gacha() + ', ' + cha3 + ', ' + cha4 + ', ' + cha5 + ', ' + cha6 + ', ' + cha7 + ', ' + cha8 + ', ' + cha9 + ', dan ' + cha10 + '.'
 
 	return fulltext
 	
 def gacha6():
 	get = random.randint(1,10)
 	if get >= 9:
-		numbr = random.randint(1,16)
+		numbr = random.randint(1,17)
 		if numbr == 1:
 			chrs = 'Exusiai'
 		elif numbr == 2:
@@ -111,6 +102,8 @@ def gacha6():
 			chrs = 'Schwarz'
 		elif numbr == 16:
 			chrs = 'Mostima'
+		elif numbr == 17:
+			chrs = 'Blaze'
 			
 		chara = 'Selamat, Anda mendapatkan ' + chrs + '!'
 	else:
@@ -122,7 +115,7 @@ def gacha():
 	
 	rarity = random.randint(1,100)
 	if rarity <= 2:
-		numbr = random.randint(1,16)
+		numbr = random.randint(1,17)
 		if numbr == 1:
 			chrs = 'Exusiai'
 		elif numbr == 2:
@@ -155,10 +148,12 @@ def gacha():
 			chrs = 'Schwarz'
 		elif numbr == 16:
 			chrs = 'Mostima'
+		elif numbr == 17:
+			chrs = 'Blaze'
 		chara = '*' + chrs + '*'
 			
 	elif rarity <= 10:
-		numbr = random.randint(1,32)
+		numbr = random.randint(1,33)
 		if numbr == 1:
 			chrs = 'Ptilopsis'
 		elif numbr == 2:
@@ -221,10 +216,12 @@ def gacha():
 			chrs = 'Glaucus'
 		elif numbr == 32:
 			chrs = 'Waai fu'
+		elif numbr == 33:
+			chrs = 'GreyThroat'
 		chara = '+' + chrs + '+'
 			
 	elif rarity <= 60:
-		numbr = random.randint(1,26)
+		numbr = random.randint(1,27)
 		if numbr == 1: 
 			chara = 'Haze'
 		elif numbr == 2: 
@@ -277,6 +274,8 @@ def gacha():
 			chara = 'Sussuro'
 		elif numbr == 26:
 			chara = 'May'
+		elif numbr == 27:
+			chara = 'Ambriel'
 	else: 
 		numbr = random.randint(1,16)
 		if numbr == 1: 
