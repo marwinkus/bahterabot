@@ -58,7 +58,7 @@ def gacha10():
 	text1 = 'Anda mendapatkan: ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', dan ' + gacha(a, b) + '.'
 	
 	skor = a*10 + b
-	text2 = 'Skor Anda: ' + str(a) + ' QC + ' + str(b) + ' AC =' str(skor) + '.'
+	text2 = 'Skor Anda: ' + str(a) + ' QC + ' + str(b) + ' AC =' + str(skor) + '.'
 	
 	fulltext = text1 + text2
 	return fulltext
