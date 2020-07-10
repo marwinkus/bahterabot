@@ -71,7 +71,7 @@ def gacha10():
 	skor = adc*10 + qlc
 	text2 = ' Skor Anda: ' + str(qlc) + ' QC + ' + str(adc) + ' AC = ' + str(skor) + '.'
 	
-	fulltext = text1 + text2
+	fulltext = text1
 	return fulltext
 	
 def gacha6():
