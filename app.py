@@ -216,7 +216,7 @@ def gacha():
 		chara = '+' + chrs + '+'
 			
 	elif rarity <= 60:
-		qdc = qdc + 30
+		qlc = qlc + 30
 		adc = adc + 1
 		numbr = random.randint(1,27)
 		if numbr == 1: 
@@ -275,7 +275,7 @@ def gacha():
 			chara = 'Ambriel'
 	else: 
 		numbr = random.randint(1,16)
-		qdc = qdc + 10
+		qlc = qlc + 10
 		if numbr == 1: 
 			chara = 'Fang'
 		elif numbr == 2: 
