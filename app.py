@@ -55,16 +55,16 @@ def handle_message(event):
 def gacha10():
 	adc = 0
 	qlc = 0
-	cha1 = gacha()
-	cha2 = gacha()
-	cha3 = gacha()
-	cha4 = gacha()
-	cha5 = gacha()
-	cha6 = gacha()
-	cha7 = gacha()
-	cha8 = gacha()
-	cha9 = gacha()
-	cha10 = gacha()
+	cha1 = gacha(adc, qlc)
+	cha2 = gacha(adc, qlc)
+	cha3 = gacha(adc, qlc)
+	cha4 = gacha(adc, qlc)
+	cha5 = gacha(adc, qlc)
+	cha6 = gacha(adc, qlc)
+	cha7 = gacha(adc, qlc)
+	cha8 = gacha(adc, qlc)
+	cha9 = gacha(adc, qlc)
+	cha10 = gacha(adc, qlc)
 	
 	text1 = 'Anda mendapatkan: ' + cha1 + ', ' + cha2 + ', ' + cha3 + ', ' + cha4 + ', ' + cha5 + ', ' + cha6 + ', ' + cha7 + ', ' + cha8 + ', ' + cha9 + ', dan ' + cha10 + '.'
 	
@@ -119,7 +119,7 @@ def gacha6():
 		
 	return chara
 	
-def gacha():
+def gacha(adc, qlc):
 	
 	rarity = random.randint(1,100)
 	if rarity <= 2:
