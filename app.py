@@ -119,7 +119,7 @@ def gacha6():
 		
 	return chara
 	
-def gacha(a, b):
+def gacha():
 	
 	rarity = random.randint(1,100)
 	if rarity <= 2:
