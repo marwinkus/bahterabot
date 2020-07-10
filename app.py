@@ -56,8 +56,7 @@ def gacha10():
 	adc = 0
 	qlc = 0
 	fulltext = 'Anda mendapatkan: ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', dan ' + gacha() + '. Skor Anda = ' + qlc + ' QC + ' + adc + ' AC = '
-	skor = adc*10 + qlc
-	fulltext = fulltext + skor + '.'
+
 	return fulltext
 	
 def gacha6():
@@ -109,7 +108,7 @@ def gacha():
 	
 	rarity = random.randint(1,100)
 	if rarity <= 2:
-		adc += 10
+		adc = adc + 10
 		numbr = random.randint(1,17)
 		if numbr == 1:
 			chrs = 'Exusiai'
@@ -148,7 +147,7 @@ def gacha():
 		chara = '*' + chrs + '*'
 			
 	elif rarity <= 10:
-		adc += 5
+		adc = adc + 5
 		numbr = random.randint(1,33)
 		if numbr == 1:
 			chrs = 'Ptilopsis'
@@ -217,8 +216,8 @@ def gacha():
 		chara = '+' + chrs + '+'
 			
 	elif rarity <= 60:
-		qdc += 30
-		adc += 1
+		qdc = qdc + 30
+		adc = adc + 1
 		numbr = random.randint(1,27)
 		if numbr == 1: 
 			chara = 'Haze'
@@ -276,7 +275,7 @@ def gacha():
 			chara = 'Ambriel'
 	else: 
 		numbr = random.randint(1,16)
-		qdc += 10
+		qdc = qdc + 10
 		if numbr == 1: 
 			chara = 'Fang'
 		elif numbr == 2: 
