@@ -53,9 +53,9 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
 
 def gacha10():
-	adc = 0
-	qlc = 0
-	fulltext = 'Anda mendapatkan: ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', ' + gacha() + ', dan ' + gacha() + '. Skor Anda = ' + str(qlc) + ' QC + ' + str(adc) + ' AC'
+	a = 0
+	b = 0
+	fulltext = 'Anda mendapatkan: ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', dan ' + gacha(a, b) + '. Skor Anda = ' + str(a) + ' QC + ' + str(b) + ' AC'
 
 	return fulltext
 	
@@ -104,11 +104,11 @@ def gacha6():
 		
 	return chara
 	
-def gacha():
+def gacha(a, b):
 	
 	rarity = random.randint(1,100)
 	if rarity <= 2:
-		adc = adc + 10
+		a = a + 10
 		numbr = random.randint(1,17)
 		if numbr == 1:
 			chrs = 'Exusiai'
@@ -147,7 +147,7 @@ def gacha():
 		chara = '*' + chrs + '*'
 			
 	elif rarity <= 10:
-		adc = adc + 5
+		a = a + 5
 		numbr = random.randint(1,33)
 		if numbr == 1:
 			chrs = 'Ptilopsis'
@@ -216,8 +216,8 @@ def gacha():
 		chara = '+' + chrs + '+'
 			
 	elif rarity <= 60:
-		qlc = qlc + 30
-		adc = adc + 1
+		b = b + 30
+		a = a + 1
 		numbr = random.randint(1,27)
 		if numbr == 1: 
 			chara = 'Haze'
@@ -275,7 +275,7 @@ def gacha():
 			chara = 'Ambriel'
 	else: 
 		numbr = random.randint(1,16)
-		qlc = qlc + 10
+		b = b + 10
 		if numbr == 1: 
 			chara = 'Fang'
 		elif numbr == 2: 
