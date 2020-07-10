@@ -62,7 +62,7 @@ def gacha10():
 	print(str(adc))
 	cha4 = gacha(adc, qlc)
 	cha5 = gacha(adc, qlc)
-	cha6 = gacha(adc, qlc
+	cha6 = gacha(adc, qlc)
 	print(str(adc))
 	cha7 = gacha(adc, qlc)
 	cha8 = gacha(adc, qlc)
