@@ -291,7 +291,6 @@ def gacha(adc, qlc):
 	else: 
 		numbr = random.randint(1,16)
 		qlc += 10
-		print(str(b))
 		if numbr == 1: 
 			chara = 'Fang'
 		elif numbr == 2: 
