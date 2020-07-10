@@ -57,7 +57,7 @@ def gacha10():
 	b = 0
 	text1 = 'Anda mendapatkan: ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', ' + gacha(a, b) + ', dan ' + gacha(a, b) + '.'
 	
-	skor = a*10 + b
+	skor = b*10 + a
 	text2 = ' Skor Anda: ' + str(a) + ' QC + ' + str(b) + ' AC = ' + str(skor) + '.'
 	
 	fulltext = text1 + text2
@@ -280,6 +280,7 @@ def gacha(a, b):
 	else: 
 		numbr = random.randint(1,16)
 		b += 10
+		print(str(b))
 		if numbr == 1: 
 			chara = 'Fang'
 		elif numbr == 2: 
