@@ -51,6 +51,26 @@ def handle_message(event):
     elif event.message.text.casefold() == "mau gacha 10 kali":
         message = TextSendMessage(text=gacha10())
         line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text.casefold() == "minta angpao":
+        message = TextSendMessage(text=gachaangpao())
+        line_bot_api.reply_message(event.reply_token, message) 
+        
+def gachaangpao():
+	pao = random.randint(1,20)
+	if pao <= 1:
+		angp = 'Maaf, angpao Anda hangus...'
+	elif pao <= 4:
+		angp = 'Anda mendapatkan 200 Orundum.'
+	elif pao <= 9:
+		angp = 'Anda mendapatkan 300 Orundum.'
+	elif pao <= 17:
+		angp = 'Anda mendapakan 500 Orundum!.'
+	elif pao <= 19:
+		angp = 'Selamat! 800 Orundum jadi milik Anda.'
+	else:
+		angp = 'Selamat! Anda mendapatkan 5000 Orundum! Saatnya kembali ke kenyataan.'
+		
+	return angp
 
 def gacha10():
 	adc = 0
