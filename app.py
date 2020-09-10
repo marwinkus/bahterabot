@@ -54,7 +54,23 @@ def handle_message(event):
     elif event.message.text.casefold() == "minta angpao":
         message = TextSendMessage(text=gachaangpao())
         line_bot_api.reply_message(event.reply_token, message) 
-        
+    elif event.message.text.casefold() == "mau gacha sampai habis":
+        message = TextSendMessage(text=gacha100())
+        line_bot_api.reply_message(event.reply_token, message)
+ 
+def gacha100():
+	i = 1
+	wall = 'Anda mendapat: '
+	while i < 101
+		wall += gacha(adc, qlc)
+		if i < 100
+			wall += ', '
+		else wall += ', dan'
+		i += 1
+	wall += '.'
+	
+	return wall
+
 def gachaangpao():
 	pao = random.randint(1,20)
 	if pao <= 1:
