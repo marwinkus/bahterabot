@@ -4,7 +4,6 @@ import random
 import json
 import requests
 import datetime
-import math
 
 from linebot import (
     LineBotApi, WebhookHandler
