@@ -62,7 +62,7 @@ def gacha100():
 	i = 1
 	wall = 'Anda mendapat: '
 	while i < 101:
-		wall += gacha(0, 0)
+		wall += gacha(adc, qlc)
 		if i < 100:
 			wall += ', '
 		else:
@@ -394,7 +394,7 @@ def colong():
     status = True
 
     while status:
-        poin = random.randint(1,4000)
+        poin = random.randint(1,3500)
         link = "http://safebooru.org/index.php?page=dapi&s=post&q=index&pid=" + str(poin) + "&limit=1&json=1&tags=arknights"
         res = requests.get(link)
 
