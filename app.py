@@ -43,7 +43,7 @@ def handle_message(event):
     if event.message.text.casefold() == "minta operator":
         line_bot_api.reply_message(event.reply_token, colong())
     elif event.message.text.casefold() == "mau gacha":
-        message = TextSendMessage(text=gacha())
+        message = TextSendMessage(text=gacha(0, 0))
         line_bot_api.reply_message(event.reply_token, message)
     elif event.message.text.casefold() == "minta top operator":
         message = TextSendMessage(text=gacha6())
@@ -61,9 +61,9 @@ def handle_message(event):
 def gacha100():
 	i = 1
 	wall = 'Anda mendapat: '
-	while i < 100:
+	while i < 5:
 		wall += gacha(0, 0)
-		if i < 99:
+		if i < 4:
 			wall += ', '
 		else:
 			wall += ', dan'
