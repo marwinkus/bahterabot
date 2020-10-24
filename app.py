@@ -169,7 +169,7 @@ def gacha(adc, qlc):
 	rarity = random.randint(1,100)
 	if rarity <= 2:
 		adc += 10
-		numbr = random.randint(1,21)
+		numbr = random.randint(1,22)
 		if numbr == 1:
 			chrs = 'Exusiai'
 		elif numbr == 2:
@@ -212,11 +212,13 @@ def gacha(adc, qlc):
 			chrs = 'Ceobe'
 		elif numbr == 21:
 			chrs = 'Bagpipe'
+		elif numbr == 22:
+			chrs = 'Rosa'
 		chara = '*' + chrs + '*'
 			
 	elif rarity <= 10:
 		adc += 5
-		numbr = random.randint(1,37)
+		numbr = random.randint(1,38)
 		if numbr == 1:
 			chrs = 'Ptilopsis'
 		elif numbr == 2:
@@ -273,28 +275,32 @@ def gacha(adc, qlc):
 			chrs = 'Swire'
 		elif numbr == 28:
 			chrs = 'Executor'
-		elif numbr == 30:
+		elif numbr == 29:
 			chrs = 'Astesia'
-		elif numbr == 31:
+		elif numbr == 30:
 			chrs = 'Glaucus'
-		elif numbr == 32:
+		elif numbr == 31:
 			chrs = 'Waai fu'
-		elif numbr == 33:
+		elif numbr == 32:
 			chrs = 'GreyThroat'
+		elif numbr == 33:
+			chrs = 'Reed'
 		elif numbr == 34:
-			chrs = 'Hung'
+			chrs = 'Broca'
 		elif numbr == 35:
-			chrs = 'Leizi'
+			chrs = 'Hung'
 		elif numbr == 36:
-			chrs = 'Sesa'
+			chrs = 'Leizi'
 		elif numbr == 37:
-			chrs = 'Bibeak'
+			chrs = 'Sesa'
+		elif numbr == 38:
+			chrs = 'Leonhardt'
 		chara = '+' + chrs + '+'
 			
 	elif rarity <= 60:
 		qlc += 30
 		adc += 1
-		numbr = random.randint(1,28)
+		numbr = random.randint(1,29)
 		if numbr == 1: 
 			chara = 'Haze'
 		elif numbr == 2: 
@@ -351,6 +357,8 @@ def gacha(adc, qlc):
 			chara = 'Ambriel'
 		elif numbr == 28:
 			chara = 'Utage'
+		elif numbr == 29:
+			chara = 'Podenco'
 	else: 
 		numbr = random.randint(1,16)
 		qlc += 10
