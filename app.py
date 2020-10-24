@@ -61,9 +61,9 @@ def handle_message(event):
 def gacha100():
 	i = 1
 	wall = 'Anda mendapat: '
-	while i < 101:
-		wall += gacha(adc, qlc)
-		if i < 100:
+	while i < 100:
+		wall += gacha(0, 0)
+		if i < 99:
 			wall += ', '
 		else:
 			wall += ', dan'
@@ -81,7 +81,7 @@ def gachaangpao():
 	elif pao <= 9:
 		angp = 'Anda mendapatkan 300 Orundum.'
 	elif pao <= 17:
-		angp = 'Anda mendapakan 500 Orundum!.'
+		angp = 'Anda mendapakan 500 Orundum!'
 	elif pao <= 19:
 		angp = 'Selamat! 800 Orundum jadi milik Anda.'
 	else:
@@ -394,7 +394,7 @@ def colong():
     status = True
 
     while status:
-        poin = random.randint(1,3500)
+        poin = random.randint(1,4000)
         link = "http://safebooru.org/index.php?page=dapi&s=post&q=index&pid=" + str(poin) + "&limit=1&json=1&tags=arknights"
         res = requests.get(link)
 
