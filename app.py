@@ -157,6 +157,8 @@ def gacha6():
 			chrs = 'Ceobe'
 		elif numbr == 21:
 			chrs = 'Bagpipe'
+		elif numbr == 22:
+			chrs = 'Rosa'
 			
 		chara = 'Selamat, Anda mendapatkan ' + chrs + '!'
 	else:
