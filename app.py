@@ -66,7 +66,7 @@ def gacha100():
 		if i < 100:
 			wall += ', '
 		else:
-			wall += ', dan'
+			wall += ', dan '
 			wall += gacha (0, 0)
 		i += 1
 	wall += '.'
