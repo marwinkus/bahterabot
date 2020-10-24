@@ -93,17 +93,13 @@ def gacha10():
 	adc = 0
 	qlc = 0
 	cha1 = gacha(adc, qlc)
-	print(str(adc))
 	cha2 = gacha(adc, qlc)
 	cha3 = gacha(adc, qlc)
-	print(str(adc))
 	cha4 = gacha(adc, qlc)
 	cha5 = gacha(adc, qlc)
 	cha6 = gacha(adc, qlc)
-	print(str(adc))
 	cha7 = gacha(adc, qlc)
 	cha8 = gacha(adc, qlc)
-	print(str(adc))
 	cha9 = gacha(adc, qlc)
 	cha10 = gacha(adc, qlc)
 	
@@ -357,9 +353,7 @@ def gacha(adc, qlc):
 			chara = 'Utage'
 	else: 
 		numbr = random.randint(1,16)
-		print(str(qlc))
 		qlc += 10
-		print(str(qlc))
 		if numbr == 1: 
 			chara = 'Fang'
 		elif numbr == 2: 
