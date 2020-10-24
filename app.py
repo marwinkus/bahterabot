@@ -110,7 +110,7 @@ def gacha10():
 	text1 = 'Anda mendapatkan: ' + cha1 + ', ' + cha2 + ', ' + cha3 + ', ' + cha4 + ', ' + cha5 + ', ' + cha6 + ', ' + cha7 + ', ' + cha8 + ', ' + cha9 + ', dan ' + cha10 + '.'
 	
 	skor = adc*10 + qlc
-	text2 = ' Skor Anda: ' + str(qlc) + ' QC + ' + str(adc) + ' AC = ' + str(skor) + '.'
+	text2 = ' Skor Anda adalah: ' + str(qlc) + ' QC + ' + str(adc) + ' AC = ' + str(skor) + '.'
 	
 	fulltext = text1
 	return fulltext
