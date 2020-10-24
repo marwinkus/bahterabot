@@ -61,9 +61,9 @@ def handle_message(event):
 def gacha100():
 	i = 1
 	wall = 'Anda mendapat: '
-	while i < 5:
+	while i < 20:
 		wall += gacha(0, 0)
-		if i < 4:
+		if i < 19:
 			wall += ', '
 		else:
 			wall += ', dan'
