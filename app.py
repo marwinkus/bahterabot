@@ -393,9 +393,9 @@ def gacha(adc, qlc):
 		elif numbr == 29:
 			chara = 'Podenco'
 		elif numbr == 30:
-			chrs = 'Click'
+			chara = 'Click'
 		elif numbr == 31:
-			chrs = 'Cutter'
+			chara = 'Cutter'
 	else: 
 		numbr = random.randint(1,16)
 		qlc += 10
@@ -431,7 +431,6 @@ def gacha(adc, qlc):
 			chara = 'Spot'
 		elif numbr == 16:
 			chara = 'Popukar'
-		
 	return chara
 	
 def colong():
