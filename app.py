@@ -115,7 +115,7 @@ def gacha10():
 def gacha6():
 	get = random.randint(1,10)
 	if get >= 9:
-		numbr = random.randint(1,21)
+		numbr = random.randint(1,26)
 		if numbr == 1:
 			chrs = 'Exusiai'
 		elif numbr == 2:
@@ -160,6 +160,14 @@ def gacha6():
 			chrs = 'Bagpipe'
 		elif numbr == 22:
 			chrs = 'Rosa'
+		elif numbr == 23:
+			chrs = 'Suzuran'
+		elif numbr == 24:
+			chrs = 'Phantom'
+		elif numbr == 25:
+			chrs = 'W (limited)'
+		elif numbr == 26:
+			chrs = 'Weedy'
 			
 		chara = 'Selamat, Anda mendapatkan ' + chrs + '!'
 	else:
@@ -172,7 +180,7 @@ def gacha(adc, qlc):
 	rarity = random.randint(1,100)
 	if rarity <= 2:
 		adc += 10
-		numbr = random.randint(1,22)
+		numbr = random.randint(1,26)
 		if numbr == 1:
 			chrs = 'Exusiai'
 		elif numbr == 2:
@@ -217,11 +225,19 @@ def gacha(adc, qlc):
 			chrs = 'Bagpipe'
 		elif numbr == 22:
 			chrs = 'Rosa'
+		elif numbr == 23:
+			chrs = 'Suzuran'
+		elif numbr == 24:
+			chrs = 'Phantom'
+		elif numbr == 25:
+			chrs = 'W (limited)'
+		elif numbr == 26:
+			chrs = 'Weedy'
 		chara = '*' + chrs + '*'
 			
 	elif rarity <= 10:
 		adc += 5
-		numbr = random.randint(1,38)
+		numbr = random.randint(1,45)
 		if numbr == 1:
 			chrs = 'Ptilopsis'
 		elif numbr == 2:
@@ -298,12 +314,26 @@ def gacha(adc, qlc):
 			chrs = 'Sesa'
 		elif numbr == 38:
 			chrs = 'Leonhardt'
+		elif numbr == 39:
+			chrs = 'Ayerscarpe'
+		elif numbr == 40:
+			chrs = 'Asbestos'
+		elif numbr == 41:
+			chrs = 'Tsukinogi'
+		elif numbr == 42:
+			chrs = 'Beeswax'
+		elif numbr == 43:
+			chrs = 'Chiave'
+		elif numbr == 44:
+			chrs = 'Shamare'
+		elif numbr == 45:
+			chrs = 'Elysium'
 		chara = '+' + chrs + '+'
 			
 	elif rarity <= 60:
 		qlc += 30
 		adc += 1
-		numbr = random.randint(1,29)
+		numbr = random.randint(1,31)
 		if numbr == 1: 
 			chara = 'Haze'
 		elif numbr == 2: 
@@ -362,6 +392,10 @@ def gacha(adc, qlc):
 			chara = 'Utage'
 		elif numbr == 29:
 			chara = 'Podenco'
+		elif numbr == 30:
+			chrs = 'Click'
+		elif numbr == 31:
+			chrs = 'Cutter'
 	else: 
 		numbr = random.randint(1,16)
 		qlc += 10
@@ -405,7 +439,7 @@ def colong():
     status = True
 
     while status:
-        poin = random.randint(1,4000)
+        poin = random.randint(1,5000)
         link = "http://safebooru.org/index.php?page=dapi&s=post&q=index&pid=" + str(poin) + "&limit=1&json=1&tags=arknights"
         res = requests.get(link)
 
