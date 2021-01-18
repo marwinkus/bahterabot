@@ -60,6 +60,9 @@ def handle_message(event):
     elif event.message.text.casefold() == "mau gacha genshin":
         message = TextSendMessage(text=gachatop())
         line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text.casefold() == "mau pity genshin":
+        message = TextSendMessage(text=gachapity())
+        line_bot_api.reply_message(event.reply_token, message)
  
 def gachatop():
 	i = 1
@@ -71,6 +74,25 @@ def gachatop():
 		else:
 			wall += ', dan '
 			wall += gachagenshin ()
+		i += 1
+	wall += '.'
+	
+	return wall
+	
+def gachapity():
+	i = 1
+	wall = 'Anda mendapatkan Pity: '
+	while i < 11:
+		n = random.randint(1,57)
+		if n <= 11:
+			wall += rol5s()
+		else:
+			wall += rol4s()
+		if i < 10:
+			wall += ', '
+		else:
+			wall += ', dan '
+			wall += rol5s()
 		i += 1
 	wall += '.'
 	
@@ -147,7 +169,7 @@ def gachagenshin():
 	if rarity <= 6:
 		chara = rol5s()
 		
-	elif rarity <= 51:
+	elif rarity <= 57:
 		chara = rol4s()
 	
 	else: 
