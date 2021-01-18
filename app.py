@@ -143,6 +143,8 @@ def gachagenshin():
 	
 	else: 
 		chara = '3*'
+
+	return chara
 	
 def gacha100():
 	i = 1
