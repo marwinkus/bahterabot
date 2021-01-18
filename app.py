@@ -57,7 +57,93 @@ def handle_message(event):
     elif event.message.text.casefold() == "mau gacha sampai habis":
         message = TextSendMessage(text=gacha100())
         line_bot_api.reply_message(event.reply_token, message)
+    elif event.message.text.casefold() == "mau gacha genshin":
+        message = TextSendMessage(text=gachatop())
+        line_bot_api.reply_message(event.reply_token, message)
  
+def gachatop():
+	i = 1
+	wall = 'Anda mendapatkan: '
+	while i < 11:
+		wall += gachagenshin()
+		if i < 10:
+			wall += ', '
+		else:
+			wall += ', dan '
+			wall += gachagenshin ()
+		i += 1
+	wall += '.'
+	
+	return wall
+
+def gachagenshin():
+	rarity = random.randint(1,1000)
+	if rarity <= 6:
+		numbr = random.randint(1,11)
+		if numbr == 1:
+			chrs = 'Qiqi'
+		if numbr == 2:
+			chrs = 'Keqing'
+		if numbr == 3:
+			chrs = 'Mona'
+		if numbr == 4:
+			chrs = 'Diluc'
+		if numbr == 5:
+			chrs = 'Jean'
+		if numbr == 6:
+			chrs = 'Venti(L)'
+		if numbr == 7:
+			chrs = 'Klee(L)'
+		if numbr == 8:
+			chrs = 'Zhongli(L)'
+		if numbr == 9:
+			chrs = 'Tartaglia(L)'
+		if numbr == 10:
+			chrs = 'Albedo(L)'
+		if numbr == 11:
+			chrs = 'Ganyu(L)'
+		chara = '*' + chrs + '*'
+		
+	elif rarity <= 51:
+		numbr = random.randint(1,34)
+		if numbr == 1:
+			chara = 'Amber'
+		if numbr == 2:
+			chara = 'Barbara'
+		if numbr == 3:
+			chara = 'Beidou'
+		if numbr == 4:
+			chara = 'Bennet'
+		if numbr == 5:
+			chara = 'Chongyun'
+		if numbr == 6:
+			chara = 'Diona'
+		if numbr == 7:
+			chara = 'Fischl'
+		if numbr == 8:
+			chara = 'Kaeya'
+		if numbr == 9:
+			chara = 'Lisa'
+		if numbr == 10:
+			chara = 'Ningguang'
+		if numbr == 11:
+			chara = 'Noelle'
+		if numbr == 12:
+			chara = 'Razor'
+		if numbr == 13:
+			chara = 'Sucrose'
+		if numbr == 14:
+			chara = 'Xiangling'
+		if numbr == 15:
+			chara = 'Xingqiu'
+		if numbr == 16:
+			chara = 'Xinyan'
+		if numbr > 16:
+			chara =	'4* weapon'
+	
+	else: 
+		chara = '3*'
+	
 def gacha100():
 	i = 1
 	wall = 'Anda mendapat: '
