@@ -84,7 +84,7 @@ def gachapity():
 	wall = 'Anda mendapatkan Pity: '
 	while i < 10:
 		n = random.randint(1,57)
-		if n <= 11:
+		if n <= 6:
 			wall += rol5s()
 		else:
 			wall += rol4s()
