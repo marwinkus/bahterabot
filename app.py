@@ -103,7 +103,7 @@ def gachapity():
 	return wall
 	
 def rol5s():
-	n = random.randint(1,11)
+	n = random.randint(1,25)
 	if n == 1:
 		c = 'Qiqi'
 	if n == 2:
@@ -126,6 +126,8 @@ def rol5s():
 		c = 'Albedo(L)'
 	if n == 11:
 		c = 'Ganyu(L)'
+	if n > 11:
+		c =	'5* weapon'
 	cha = '*' + c + '*'
 	
 	return cha
