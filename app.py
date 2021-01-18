@@ -67,13 +67,13 @@ def handle_message(event):
 def gachatop():
 	i = 1
 	wall = 'Anda mendapatkan: '
-	while i < 11:
+	while i < 10:
 		wall += gachagenshin()
-		if i < 10:
+		if i < 9:
 			wall += ', '
 		else:
 			wall += ', dan '
-			wall += gachagenshin ()
+			wall += gachagenshin()
 		i += 1
 	wall += '.'
 	
@@ -82,17 +82,21 @@ def gachatop():
 def gachapity():
 	i = 1
 	wall = 'Anda mendapatkan Pity: '
-	while i < 11:
+	while i < 10:
 		n = random.randint(1,57)
 		if n <= 11:
 			wall += rol5s()
 		else:
 			wall += rol4s()
-		if i < 10:
+		if i < 9:
 			wall += ', '
 		else:
 			wall += ', dan '
-			wall += rol5s()
+			n = random.randint(1,57)
+			if n <= 11:
+				wall += rol5s()
+			else:
+				wall += rol4s()
 		i += 1
 	wall += '.'
 	
@@ -180,9 +184,9 @@ def gachagenshin():
 def gacha100():
 	i = 1
 	wall = 'Anda mendapat: '
-	while i < 101:
+	while i < 100:
 		wall += gacha(0, 0)
-		if i < 100:
+		if i < 99:
 			wall += ', '
 		else:
 			wall += ', dan '
