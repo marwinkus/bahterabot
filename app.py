@@ -75,11 +75,9 @@ def gachatop():
 	wall += '.'
 	
 	return wall
-
-def gachagenshin():
-	rarity = random.randint(1,1000)
-	if rarity <= 6:
-		numbr = random.randint(1,11)
+	
+def rol5s:
+	numbr = random.randint(1,11)
 		if numbr == 1:
 			chrs = 'Qiqi'
 		if numbr == 2:
@@ -103,9 +101,9 @@ def gachagenshin():
 		if numbr == 11:
 			chrs = 'Ganyu(L)'
 		chara = '*' + chrs + '*'
-		
-	elif rarity <= 51:
-		numbr = random.randint(1,34)
+	
+def rol4s:
+	numbr = random.randint(1,34)
 		if numbr == 1:
 			chara = 'Amber'
 		if numbr == 2:
@@ -140,6 +138,14 @@ def gachagenshin():
 			chara = 'Xinyan'
 		if numbr > 16:
 			chara =	'4* weapon'
+	
+def gachagenshin():
+	rarity = random.randint(1,1000)
+	if rarity <= 6:
+		rol5s
+		
+	elif rarity <= 51:
+		rol4s
 	
 	else: 
 		chara = '3*'
