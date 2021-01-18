@@ -77,75 +77,78 @@ def gachatop():
 	return wall
 	
 def rol5s():
-	numbr = random.randint(1,11)
-	if numbr == 1:
-		chrs = 'Qiqi'
-	if numbr == 2:
-		chrs = 'Keqing'
-	if numbr == 3:
-		chrs = 'Mona'
-	if numbr == 4:
-		chrs = 'Diluc'
-	if numbr == 5:
-		chrs = 'Jean'
-	if numbr == 6:
-		chrs = 'Venti(L)'
-	if numbr == 7:
-		chrs = 'Klee(L)'
-	if numbr == 8:
-		chrs = 'Zhongli(L)'
-	if numbr == 9:
-		chrs = 'Tartaglia(L)'
-	if numbr == 10:
-		chrs = 'Albedo(L)'
-	if numbr == 11:
-		chrs = 'Ganyu(L)'
-	chara = '*' + chrs + '*'
+	n = random.randint(1,11)
+	if n == 1:
+		c = 'Qiqi'
+	if n == 2:
+		c = 'Keqing'
+	if n == 3:
+		c = 'Mona'
+	if n == 4:
+		c = 'Diluc'
+	if n == 5:
+		c = 'Jean'
+	if n == 6:
+		c = 'Venti(L)'
+	if n == 7:
+		c = 'Klee(L)'
+	if n == 8:
+		c = 'Zhongli(L)'
+	if n == 9:
+		c = 'Tartaglia(L)'
+	if n == 10:
+		c = 'Albedo(L)'
+	if n == 11:
+		c = 'Ganyu(L)'
+	cha = '*' + c + '*'
+	
+	return cha
 	
 def rol4s():
-	numbr = random.randint(1,34)
-	if numbr == 1:
-		chara = 'Amber'
-	if numbr == 2:
-		chara = 'Barbara'
-	if numbr == 3:
-		chara = 'Beidou'
-	if numbr == 4:
-		chara = 'Bennet'
-	if numbr == 5:
-		chara = 'Chongyun'
-	if numbr == 6:
-		chara = 'Diona'
-	if numbr == 7:
-		chara = 'Fischl'
-	if numbr == 8:
-		chara = 'Kaeya'
-	if numbr == 9:
-		chara = 'Lisa'
-	if numbr == 10:
-		chara = 'Ningguang'
-	if numbr == 11:
-		chara = 'Noelle'
-	if numbr == 12:
-		chara = 'Razor'
-	if numbr == 13:
-		chara = 'Sucrose'
-	if numbr == 14:
-		chara = 'Xiangling'
-	if numbr == 15:
-		chara = 'Xingqiu'
-	if numbr == 16:
-		chara = 'Xinyan'
-	if numbr > 16:
-		chara =	'4* weapon'
+	n = random.randint(1,34)
+	if n == 1:
+		c = 'Amber'
+	if n == 2:
+		c = 'Barbara'
+	if n == 3:
+		c = 'Beidou'
+	if n == 4:
+		c = 'Bennet'
+	if n == 5:
+		c = 'Chongyun'
+	if n == 6:
+		c = 'Diona'
+	if n == 7:
+		c = 'Fischl'
+	if n == 8:
+		c = 'Kaeya'
+	if n == 9:
+		c = 'Lisa'
+	if n == 10:
+		c = 'Ningguang'
+	if n == 11:
+		c = 'Noelle'
+	if n == 12:
+		c = 'Razor'
+	if n == 13:
+		c = 'Sucrose'
+	if n == 14:
+		c = 'Xiangling'
+	if n == 15:
+		c = 'Xingqiu'
+	if n == 16:
+		c = 'Xinyan'
+	if n > 16:
+		c =	'4* weapon'
+	return c
 	
 def gachagenshin():
 	rarity = random.randint(1,1000)
 	if rarity <= 6:
-		rol5s()
+		chara = rol5s()
 		
 	elif rarity <= 51:
-		rol4s()
+		chara = rol4s()
 	
 	else: 
 		chara = '3*'
